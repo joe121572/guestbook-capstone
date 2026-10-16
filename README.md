@@ -1,66 +1,16 @@
-## Foundry
+# 📖 Decentralized Guestbook Smart Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A decentralized guestbook application built with **Solidity** and **Foundry**, deployed live on the Ethereum Sepolia Testnet.
 
-Foundry consists of:
+## 📌 Project Overview
+The Guestbook smart contract allows users to record permanent on-chain messages with character limits, custom edit permissions, and efficient pagination.
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## 🛠 Tech Stack
+* **Language:** Solidity (`^0.8.34`)
+* **Framework:** Foundry (Forge)
+* **Network:** Ethereum Sepolia Testnet
 
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## 🧪 Running Tests
+To run the full unit and integration test suite:
+```bash
+forge test -vv
